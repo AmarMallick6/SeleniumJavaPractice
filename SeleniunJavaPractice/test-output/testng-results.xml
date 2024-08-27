@@ -1,113 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-25T21:43:19 IST" name=" Annotation Suite" finished-at="2024-07-25T21:43:19 IST" duration-ms="148">
+  <suite started-at="2024-08-27T15:13:03 IST" name=" GroupingTestSuite" finished-at="2024-08-27T15:13:03 IST" duration-ms="76">
     <groups>
+      <group name="Functional">
+        <method signature="Class3.paymentTest()[pri:1, instance:grouping.Class3@47eaca72]" name="paymentTest" class="grouping.Class3"/>
+        <method signature="Class3.productCompareTest()[pri:2, instance:grouping.Class3@47eaca72]" name="productCompareTest" class="grouping.Class3"/>
+      </group> <!-- Functional -->
+      <group name="Sanity">
+        <method signature="Class3.paymentTest()[pri:1, instance:grouping.Class3@47eaca72]" name="paymentTest" class="grouping.Class3"/>
+        <method signature="Class3.productCompareTest()[pri:2, instance:grouping.Class3@47eaca72]" name="productCompareTest" class="grouping.Class3"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="Class1.launchApp()[pri:1, instance:grouping.Class1@7c7b252e]" name="launchApp" class="grouping.Class1"/>
+        <method signature="Class1.loginApp()[pri:2, instance:grouping.Class1@7c7b252e]" name="loginApp" class="grouping.Class1"/>
+        <method signature="Class1.searchApp()[pri:3, instance:grouping.Class1@7c7b252e]" name="searchApp" class="grouping.Class1"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-07-25T21:43:19 IST" name="TestNG AnnotationTest1" finished-at="2024-07-25T21:43:19 IST" duration-ms="76">
-      <class name="annotations.ClassTwo">
-        <test-method is-config="true" signature="beforeClassMethod()[pri:0, instance:annotations.ClassTwo@43bc63a3]" started-at="2024-07-25T21:43:19 IST" name="beforeClassMethod" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
+    <test started-at="2024-08-27T15:13:03 IST" name="Test" finished-at="2024-08-27T15:13:03 IST" duration-ms="76">
+      <class name="grouping.Class1">
+        <test-method signature="launchApp()[pri:1, instance:grouping.Class1@7c7b252e]" started-at="2024-08-27T15:13:03 IST" name="launchApp" finished-at="2024-08-27T15:13:03 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClassMethod -->
-        <test-method signature="addToCartProductTest()[pri:0, instance:annotations.ClassTwo@43bc63a3]" started-at="2024-07-25T21:43:19 IST" name="addToCartProductTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- launchApp -->
+        <test-method signature="loginApp()[pri:2, instance:grouping.Class1@7c7b252e]" started-at="2024-08-27T15:13:03 IST" name="loginApp" finished-at="2024-08-27T15:13:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCartProductTest -->
-        <test-method signature="orderProductTest()[pri:0, instance:annotations.ClassTwo@43bc63a3]" started-at="2024-07-25T21:43:19 IST" name="orderProductTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- loginApp -->
+        <test-method signature="searchApp()[pri:3, instance:grouping.Class1@7c7b252e]" started-at="2024-08-27T15:13:03 IST" name="searchApp" finished-at="2024-08-27T15:13:03 IST" depends-on-methods="grouping.Class1.loginApp, grouping.Class1.launchApp" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orderProductTest -->
-        <test-method signature="searchProductTest()[pri:0, instance:annotations.ClassTwo@43bc63a3]" started-at="2024-07-25T21:43:19 IST" name="searchProductTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- searchApp -->
+      </class> <!-- grouping.Class1 -->
+      <class name="grouping.Class3">
+        <test-method signature="paymentTest()[pri:1, instance:grouping.Class3@47eaca72]" started-at="2024-08-27T15:13:03 IST" name="paymentTest" finished-at="2024-08-27T15:13:03 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchProductTest -->
-        <test-method is-config="true" signature="afterClassMethod()[pri:0, instance:annotations.ClassTwo@43bc63a3]" started-at="2024-07-25T21:43:19 IST" name="afterClassMethod" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- paymentTest -->
+        <test-method signature="productCompareTest()[pri:2, instance:grouping.Class3@47eaca72]" started-at="2024-08-27T15:13:03 IST" name="productCompareTest" finished-at="2024-08-27T15:13:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClassMethod -->
-      </class> <!-- annotations.ClassTwo -->
-      <class name="annotations.ClassOne">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="beforeTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClassMethod()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="beforeClassMethod" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClassMethod -->
-        <test-method is-config="true" signature="logInTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="logInTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logInTest -->
-        <test-method signature="addToCartProductTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="addToCartProductTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCartProductTest -->
-        <test-method is-config="true" signature="logOutTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="logOutTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutTest -->
-        <test-method is-config="true" signature="logInTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="logInTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logInTest -->
-        <test-method signature="orderProductTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="orderProductTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderProductTest -->
-        <test-method is-config="true" signature="logOutTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="logOutTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutTest -->
-        <test-method signature="searchProductTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="searchProductTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProductTest -->
-        <test-method is-config="true" signature="logInTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="logInTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logInTest -->
-        <test-method is-config="true" signature="logOutTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="logOutTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutTest -->
-        <test-method is-config="true" signature="afterClassMethod()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="afterClassMethod" finished-at="2024-07-25T21:43:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClassMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="afterTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- annotations.ClassOne -->
-    </test> <!-- TestNG AnnotationTest1 -->
-    <test started-at="2024-07-25T21:43:19 IST" name="TestNG AnnotationTest2" finished-at="2024-07-25T21:43:19 IST" duration-ms="6">
-      <class name="annotations.ClassOne">
-        <test-method is-config="true" signature="beforeSuiteMethod()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="beforeSuiteMethod" finished-at="2024-07-25T21:43:19 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuiteMethod -->
-        <test-method is-config="true" signature="afterSuiteMethod()[pri:0, instance:annotations.ClassOne@36ebc363]" started-at="2024-07-25T21:43:19 IST" name="afterSuiteMethod" finished-at="2024-07-25T21:43:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuiteMethod -->
-      </class> <!-- annotations.ClassOne -->
-      <class name="annotations.ClassThree">
-        <test-method signature="searchProductTest()[pri:0, instance:annotations.ClassThree@2aceadd4]" started-at="2024-07-25T21:43:19 IST" name="searchProductTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProductTest -->
-        <test-method is-config="true" signature="logInTest()[pri:0, instance:annotations.ClassThree@2aceadd4]" started-at="2024-07-25T21:43:19 IST" name="logInTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logInTest -->
-        <test-method is-config="true" signature="logOutTest()[pri:0, instance:annotations.ClassThree@2aceadd4]" started-at="2024-07-25T21:43:19 IST" name="logOutTest" finished-at="2024-07-25T21:43:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutTest -->
-      </class> <!-- annotations.ClassThree -->
-    </test> <!-- TestNG AnnotationTest2 -->
-  </suite> <!--  Annotation Suite -->
+        </test-method> <!-- productCompareTest -->
+      </class> <!-- grouping.Class3 -->
+    </test> <!-- Test -->
+  </suite> <!--  GroupingTestSuite -->
 </testng-results>
