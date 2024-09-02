@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Meesho  Suite"  >
+  <test  name="Chrome Test">
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+  <class name="paralleltest.Test1"></class>
+  <class name="paralleltest.Test2"></class>
+  </classes>
+  </test> <!-- Test -->
+  <test  name="edge Test">
+  <parameter name="browser" value="edge"></parameter>
+  <classes>
+  <class name="paralleltest.Test1"></class>
+  <class name="paralleltest.Test2"></class>
+  </classes>
+  </test> <!-- Test -->
+  <test  name="firefox Test">
+  <parameter name="browser" value="firefox"></parameter>
+  <classes>
+  <class name="paralleltest.Test1"></class>
+  <class name="paralleltest.Test2"></class>
+  </classes>
+  </test> <!-- Test --> 
+</suite> <!-- Suite -->
